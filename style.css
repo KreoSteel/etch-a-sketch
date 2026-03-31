@@ -24,14 +24,28 @@ header {
   width: 50%;
   #modes {
     display: flex;
+    align-items: center;
     gap: 1em;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      font-weight: 700;
+    }
   }
 }
 
 header > div {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  gap: 1em;
+
+}
+
+#grid-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1em;
   > button {
     background: gray;
@@ -45,8 +59,8 @@ header > div {
 
 #grid-container {
   background: #e9edde;
-  width: 900px;
-  height: 800px;
+  width: 40vw;
+  aspect-ratio: 1/1;
   display: grid;
   div {
     border: 1px solid #3d3b30;
@@ -58,6 +72,7 @@ button {
   color: #f5f5ed;
   padding: 4px 8px;
   width: fit-content;
+  height: fit-content;
   border: 1px black;
   cursor: pointer;
   font-size: 1rem;
